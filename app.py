@@ -44,7 +44,7 @@ def detect_and_blur_faces(image, method="Размытие", strength=15):
     return Image.fromarray(img_rgb), len(faces)
 
 def main():
-   st.set_page_config(page_title="AutoBlur AI", page_icon="🔍", layout="centered")
+    st.set_page_config(page_title="AutoBlur AI", page_icon="🔍", layout="centered")
     
     st.title("🕵️ AutoBlur AI: Защитник приватности")
     st.markdown("Загрузите фото, и наша модель компьютерного зрения автоматически обнаружит лица и анонимизирует их для защиты приватности.")
