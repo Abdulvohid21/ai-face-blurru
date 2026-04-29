@@ -41,8 +41,7 @@ def detect_and_blur_faces(image, method="Blur", strength=15):
     img_rgb = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
     return Image.fromarray(img_rgb), len(faces)
 def main():
-    st.set_page_config(page_title="AutoBlur AI", page_icon="🕵️", layout="centered")
-st.set_page_config(page_title="AutoBlur AI", page_icon="🔍", layout="centered")
+   st.set_page_config(page_title="AutoBlur AI", page_icon="🕵️", layout="centered")
 
 st.title("🕵️ AutoBlur AI: Защита конфиденциальности")
 st.markdown("Загрузите фотографию, и наша модель компьютерного зрения автоматически обнаружит лица и анонимизирует их для защиты конфиденциальности.")
@@ -74,3 +73,6 @@ with st.spinner('Обнаружение лиц и применение ИИ-ан
 
 st.success(f"✅ Успешно обнаружено и анонимизировано {face_count} лицо(лиц)!")
 st.warning("Лица на изображении не обнаружены. Попробуйте другое!")
+        
+if __name__ == '__main__':
+    main()
