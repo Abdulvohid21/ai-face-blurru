@@ -1,4 +1,4 @@
-st.set_page_config(page_title="AutoBlur AI", page_icon="🕵️", layout="centered")
+st.set_page_config(page_title="AutoBlur AI", page_icon="🔍", layout="centered")
 
 st.title("🕵️ AutoBlur AI: Защита конфиденциальности")
 st.markdown("Загрузите фотографию, и наша модель компьютерного зрения автоматически обнаружит лица и анонимизирует их для защиты конфиденциальности.")
